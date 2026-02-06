@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, system-ui, sans-serif;
+  background: linear-gradient(135deg, #0b1220, #0f172a, #0b1220);
+  color: white;
+  min-height: 100vh;
+}
+
+/* center everything nicely */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* NAVBAR */
+.nav {
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(14px);
+  background: rgba(10, 14, 25, 0.8);
+  display: flex;
+  gap: 24px;
+  padding: 18px 40px;
+  align-items: center;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav a:hover {
+  color: #5ef3c7;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+.primary {
+  background: linear-gradient(90deg,#7c5cff,#5ef3c7);
+  color: #0b1220;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 24px;
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  margin-bottom: 18px;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  font-size: 64px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  opacity: 0.7;
+  margin-bottom: 30px;
+}
+
+/* FORMS */
+input, textarea, select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  background: #1e293b;
+  color: white;
+  border: none;
+  margin-bottom: 10px;
+}
+
+/* REPORT IMAGE */
+.preview {
+  width: 180px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+button:hover{
+  transform: translateY(-2px);
+  transition: all .2s;
+}
+
+.card{
+  transition: all .25s;
+}
+
+.card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 20px 60px rgba(0,0,0,.6);
+}
+
+.fade-in{
+  animation: fade .6s ease forwards;
+}
+
+@keyframes fade{
+  from{opacity:0;transform:translateY(20px)}
+  to{opacity:1}
+}
+
+.report-card{
+  display:flex;
+  align-items:center;
+  gap:20px;
+  transition:all .2s;
+}
+
+.report-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 15px 40px rgba(0,0,0,.5);
+}
